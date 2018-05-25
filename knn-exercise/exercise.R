@@ -25,7 +25,7 @@ pred <- knn(train = scale(ir_train[,-5]),
            k = 40)
 
 accuracy(ir_test$Species, pred)
-
+pred
 #LOOP FOR MULTIPLE K's
 k_to_try = 1:100
 acc_k = rep(x = 0, times = length(k_to_try))
